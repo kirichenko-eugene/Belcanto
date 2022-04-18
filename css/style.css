@@ -1,0 +1,144 @@
+* {
+  font-family: "Merriweather", "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.wrapper {
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+.header__body,
+.header__img {
+  position: relative;
+}
+
+.header__img img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header__img::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.header__navigation {
+  position: absolute;
+  top: 50px;
+  left: 131px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  color: #c03e3e;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  position: relative;
+}
+
+.header__logo::before {
+  position: absolute;
+  content: "";
+  width: 72px;
+  border: 3px solid #9c0909;
+  background-color: #9c0909;
+  bottom: -16px;
+}
+
+.author {
+  display: flex;
+  padding: 0px 0px 0px 100px;
+}
+
+.author img {
+  width: 54px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.author__text {
+  margin: auto 0px auto 14px;
+}
+
+.author__text p {
+  margin: 0px 0px 0px 0px;
+}
+
+.author__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2b1111;
+}
+
+.author__date {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.header__container {
+  position: absolute;
+  z-index: 3;
+  bottom: 20%;
+  left: 130px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header__title {
+  font-size: 96px;
+  line-height: 121px;
+  color: #201c1c;
+}
+
+.header__subtitle {
+  font-size: 32px;
+  line-height: 40px;
+  color: #2b1111;
+}
+
+.article__text {
+  margin: 130px 0px 0px 316px;
+  max-width: 627px;
+}
+
+.article__text p {
+  line-height: 30.82px;
+  padding: 0px 0px 25px 0px;
+}
+
+.block__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block__text {
+  max-width: 367px;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0em;
+  color: #c52c2c;
+  align-self: center;
+}
+
+.block__img img {
+  width: 100%;
+  height: auto;
+}
