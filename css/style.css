@@ -17,6 +17,7 @@
 .header__img img {
   position: relative;
   max-width: 100%;
+  object-fit: cover;
   height: auto;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -35,9 +36,24 @@
 .header__navigation {
   position: absolute;
   top: 50px;
-  left: 131px;
+  left: 8.68%;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 992px) {
+  .header__navigation {
+    flex-direction: column;
+    align-items: center-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__navigation {
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 15px;
+  }
 }
 
 .header__logo {
@@ -46,6 +62,13 @@
   font-size: 64px;
   line-height: 80px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .header__logo::before {
@@ -57,9 +80,26 @@
   bottom: -16px;
 }
 
+@media (max-width: 992px) {
+  .header__logo {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .header__logo::before {
+    display: none;
+  }
+}
+
 .author {
   display: flex;
   padding: 0px 0px 0px 100px;
+}
+
+@media (max-width: 992px) {
+  .author {
+    padding: 0px 0px 0px 0px;
+  }
 }
 
 .author img {
@@ -90,14 +130,25 @@
   line-height: 18px;
 }
 
+@media (max-width: 768px) {
+  .author img {
+    display: none;
+  }
+}
+
 .header__container {
   position: absolute;
   z-index: 3;
-  bottom: 20%;
-  left: 130px;
+  top: 53%;
+  left: 8.3%;
   display: flex;
   flex-direction: column;
-  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .header__container {
+    left: 3%;
+  }
 }
 
 .header__title {
@@ -110,16 +161,121 @@
   font-size: 32px;
   line-height: 40px;
   color: #2b1111;
+  max-width: 28%;
+  align-self: end;
+  padding-top: 10px;
+  padding-right: 19%;
+}
+
+@media (max-width: 1260px) {
+  .header__title {
+    font-size: 75px;
+    line-height: 80px;
+  }
+
+  .header__subtitle {
+    font-size: 28px;
+    max-width: 30%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .header__subtitle {
+    font-size: 24px;
+    max-width: 60%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+    max-width: 70%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 560px) {
+  .header__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 70%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__title {
+    line-height: 30px;
+  }
+
+  .header__subtitle {
+    max-width: 90%;
+    padding: 0 auto;
+  }
 }
 
 .article__text {
-  margin: 130px 0px 0px 316px;
-  max-width: 627px;
+  margin: 8.6% 20px 0px 316px;
+  max-width: 41.52%;
 }
 
 .article__text p {
   line-height: 30.82px;
   padding: 0px 0px 25px 0px;
+}
+
+@media (max-width: 1260px) {
+  .article__text {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 14%;
+  }
+}
+
+@media (max-width: 992px) {
+  .article__text {
+    margin-top: 8.6%;
+  }
+}
+
+@media (max-width: 700px) {
+  .article__text {
+    margin-top: 16%;
+  }
+}
+
+@media (max-width: 480px) {
+  .article__text {
+    margin-top: 22%;
+  }
+
+  .article__text p {
+    font-size: 14px;
+    line-height: 23.97px;
+  }
+}
+
+@media (max-width: 370px) {
+  .article__text {
+    margin-top: 40%;
+  }
 }
 
 .block__container {
@@ -136,9 +292,49 @@
   letter-spacing: 0em;
   color: #c52c2c;
   align-self: center;
+  padding: 0px 110px 0px 112px;
 }
 
 .block__img img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1260px) {
+  .block__text {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0px 80px 0px 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .block__container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block__img {
+    padding: 0px 0px 22px 0px;
+  }
+
+  .block__text {
+    max-width: max-content;
+    min-width: 320px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block__text {
+    font-size: 18px;
+    line-height: 19.63px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding: 0px 35px 10px 35px;
+    min-width: min-content;
+  }
 }
