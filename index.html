@@ -1,73 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belcanto</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,italic,700,700italic&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="wrapper">   
-        <header class="header">
-            <div class="header__body">
-                <div class="header__img">
-                    <img src="img/bgimage.jpg" alt="Singing boy"> 
-                    <div class="header__container">
-                        <div class="header__title">Радостно, задумчиво и умеренно…</div>
-                        <div class="header__subtitle">Уильям Кристи представил в Москве раритетную ораторию Генделя</div>
-                    </div>
-                </div>
-                <div class="header__navigation">
-                    <div class="header__logo">Belcanto.ru</div>
-                    <div class="author">
-                        <div class="author__img">
-                            <img src="img/author.jpg" alt="Author">
-                        </div>
-                        <div class="author__text">
-                            <p class="author__name">Игорь Корябин</p>
-                            <p class="author__date">21 января 2022</p>
-                        </div>
-                    </div>      
-                </div>
-            </div>   
-        </header>
-        <div class="main">
-            <div class="article">
-                <div class="article__text">
-                    <p>В московской филармонической афише монументальные опусы Генделя давно уже потеснили не только оперы других барочных
-                    авторов, но и огромный пласт традиционного оперного романтизма XIX века, включая такую драгоценную жемчужину, как
-                    итальянское бельканто. По его живому звучанию московские меломаны, привыкшие витать в высоких эмпиреях барокко, явно
-                    соскучились... Но оперно-ораториальная музыка Генделя, начало мировому ренессансу которой положил XX век, остается в
-                    моде и сегодня: в начале третьего десятилетия XXI века она по-прежнему востребована и собирает полные залы.</p>
-                    <p>В этом довелось убедиться и 16 декабря 2021 года. В этот вечер в Концертном зале им. П.И. Чайковского в рамках
-                    абонемента Московской филармонии «Вершины мастерства барокко» известный ансамбль из Франции «Les Arts Florissants»
-                    («Цветущие искусства») под управлением своего основателя и художественного руководителя Уильяма Кристи вынес на суд
-                    публики раритетную для нас ораторию Генделя «L’Allegro, Il Penseroso ed Il Moderato» («Радостный, Задумчивый и
-                    Умеренный», HWV 55). В составе названного ансамбля – камерный хор и камерный оркестр, а в качестве певцов-солистов в
-                    этом проекте к ним присоединилась интернациональная команда.</p>
-                    <p>В нее вошли сопрано из Шотландии Рэйчел Редмонд, тенор из Англии Джеймс Уэй, бас-баритон из Сербии Сретен Манойлович и
-                    совсем юный, профессионально еще даже не сформировавшийся музыкант из Австрии Бенедикт Форстнер (дискант), который
-                    сегодня является солистом Хора мальчиков монастыря Святого Флориана. В 2011 году с ансамблем «Les Arts Florissants» и
-                    Уильямом Кристи Рэйчел Редмонд исполнила в Москве партию Ангела в оратории Генделя «Иевфай». И лишь немногие вспомнят
-                    Джеймса Уэя как участника московского пришествия Уильяма Кристи 2017 года, когда в содружестве его ансамбля и проекта
-                    «Le Jardin de Voix» («Сад голосов») был представлен проект «Английский сад».</p>
-                </div>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,italic,700,700italic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__body">
+        <div class="header__background">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/bgimage1024.jpg" />
+            <source media="(min-width: 770px)" srcset="img/bgimage770.jpg" />
+            <source media="(min-width: 500px)" srcset="img/bgimage500.jpg" />
+            <img class="header__img" src="img/bgimage.jpg" alt="Singing boy" />
+          </picture>
+          <div class="header__container">
+            <div class="header__title">Радостно, задумчиво и умеренно…</div>
+            <div class="header__subtitle">
+              Уильям Кристи представил в Москве раритетную ораторию Генделя
             </div>
-            <div class="block">
-                <div class="block__container">
-                    <div class="block__text">В 2011 году с ансамблем «Les Arts Florissants» и Уильямом Кристи Рэйчел Редмонд исполнила в Москве партию Ангела в
-                    оратории Генделя «Иевфай»</div>
-                    <div class="block__img">
-                        <img src="img/articleimage.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-    </div>
-</body>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__logo">
+              <a href="#" class="logo">Belcanto.ru</a>
+            </li>
+            <li class="author">
+              <div class="author__img">
+                <img src="img/author.jpg" alt="Author" />
+              </div>
+              <div class="author__text">
+                <p class="author__name">Игорь Корябин</p>
+                <p class="author__date">21 января 2022</p>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="article">
+        <div class="article__container">
+          <div class="article__text">
+            <p>
+              В московской филармонической афише монументальные опусы Генделя
+              давно уже потеснили не только оперы других барочных авторов, но и
+              огромный пласт традиционного оперного романтизма XIX века, включая
+              такую драгоценную жемчужину, как итальянское бельканто. По его
+              живому звучанию московские меломаны, привыкшие витать в высоких
+              эмпиреях барокко, явно соскучились... Но оперно-ораториальная
+              музыка Генделя, начало мировому ренессансу которой положил XX век,
+              остается в моде и сегодня: в начале третьего десятилетия XXI века
+              она по-прежнему востребована и собирает полные залы.
+            </p>
+            <p>
+              В этом довелось убедиться и 16 декабря 2021 года. В этот вечер в
+              Концертном зале им. П.И. Чайковского в рамках абонемента
+              Московской филармонии «Вершины мастерства барокко» известный
+              ансамбль из Франции «Les Arts Florissants» («Цветущие искусства»)
+              под управлением своего основателя и художественного руководителя
+              Уильяма Кристи вынес на суд публики раритетную для нас ораторию
+              Генделя «L’Allegro, Il Penseroso ed Il Moderato» («Радостный,
+              Задумчивый и Умеренный», HWV 55). В составе названного ансамбля –
+              камерный хор и камерный оркестр, а в качестве певцов-солистов в
+              этом проекте к ним присоединилась интернациональная команда.
+            </p>
+            <p>
+              В нее вошли сопрано из Шотландии Рэйчел Редмонд, тенор из Англии
+              Джеймс Уэй, бас-баритон из Сербии Сретен Манойлович и совсем юный,
+              профессионально еще даже не сформировавшийся музыкант из Австрии
+              Бенедикт Форстнер (дискант), который сегодня является солистом
+              Хора мальчиков монастыря Святого Флориана. В 2011 году с ансамблем
+              «Les Arts Florissants» и Уильямом Кристи Рэйчел Редмонд исполнила
+              в Москве партию Ангела в оратории Генделя «Иевфай». И лишь
+              немногие вспомнят Джеймса Уэя как участника московского пришествия
+              Уильяма Кристи 2017 года, когда в содружестве его ансамбля и
+              проекта «Le Jardin de Voix» («Сад голосов») был представлен проект
+              «Английский сад».
+            </p>
+          </div>
+        </div>
+        <div class="block">
+          <div class="block__container">
+            <div class="block__text">
+              В 2011 году с ансамблем «Les Arts Florissants» и Уильямом Кристи
+              Рэйчел Редмонд исполнила в Москве партию Ангела в оратории Генделя
+              «Иевфай»
+            </div>
+            <div class="block__gallery">
+              <picture>
+                <source
+                  media="(min-width: 770px)"
+                  srcset="img/articleimage770.jpg"
+                />
+                <source
+                  media="(min-width: 500px)"
+                  srcset="img/articleimage500.jpg"
+                />
+                <img
+                  class="block__img"
+                  src="img/articleimage.jpg"
+                  alt="Singing people"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
